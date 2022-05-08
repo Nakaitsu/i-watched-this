@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Nunito:wght@200&display=swap');
+
+body{
+  padding: 0;
+  margin: 0;
+  
+  font-family: 'Nunito', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Maven Pro', sans-serif;
+}
+p, label, button, input{
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+main{
+  clear: both;
+}
+footer{
+  padding: 80px 3px 0;
+  
+  background: linear-gradient(to bottom, rgba(0,3,38,1) 0%,rgba(3,7,30,1) 60%,rgba(1,0,17,1) 99%);
+  color: #ffecd1;
+}
+header{
+  position: relative;  
+  padding: 10px 20px;
+  max-height: 9vh;
+  overflow: hidden;
+  
+  background-color: #03071e;
+  color: #ffecd1;
+}
+header h1{
+  float: left;
+
+  font-style: italic;
+  color: #faa307;
+  text-shadow: 0 0 5px #ffbd43;
+}
+section.container{
+  margin: 10px auto;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 1em;
+  clear: both;
+  overflow: hidden;
+}
+.footer-division{
+  display: grid;
+  grid-template-columns: 45% auto auto auto;
+  grid-column-gap: 1%;
+  padding: 50px 0;
+}
+.footer-division section{
+  border-left: 1px solid rgb(255, 255, 255);
+  padding-left: 10px;
+}
+.footer-division h3{
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+.footer-division p{
+  font-size: 1em;
+  text-align: justify;
+}
+.footer-division li{
+  line-height: 1.6em;
+}
+.footer-division a{
+  display: block;
+  
+  color: #ffecd1;
+}
+.text{
+  float: left;
+  width: 60%;
+}
+.illustration{
+  position: relative;
+  float: right;
+  width: 30%;
+}
+.illustration img{
+  position: absolute;
+  height: 125px;
+  width: 125px;
+}
+.header-container{
+  float: right;
+  width: 55%;
+}
+.menu-nav{
+  width: 65%;
+}
+.menu-nav ul li{
+  float: left;
+}
+.menu-nav a{
+  display: block;
+  padding: 0.6em 1.4em;
+  
+  color: #ffecd1;
+}
+.search{
+  float: right;
+  width: 35%;
+}
+.search label{
+  text-align: right;
+  font-size: 0.9em;
+}
+.search input{
+  width: 80%;
+  padding: 3px 7px;
+  float: left;
+
+  border-style: none;
+  color: #333;
+}
+.search-bar{
+  overflow: hidden;
+  width: 100%;
+
+  border-radius: 25px;
+}
+.search-bar button{
+  float: right;
+  width: 20%;
+  height: inherit;
+  padding: 3px 0;
+
+  border-style: none;
+  
+  text-indent: -9999px;
+  cursor: pointer;
+  background-image: url("./../img/busca.png");
+  background-size: 16px 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.first-window{
+  position: relative;
+  width: 100%;
+  height: 91vh;
+
+  background-image: url("./../img/sala-cinema.jpg");
+  background-size: cover;
+}
+.welcome{
+  position: relative;
+  top: 15%;
+  right: 25%;
+  width: 35%;
+  margin: 0 auto;
+  padding: 0 7%;
+
+  color: #ffecd1;
+}
+.welcome p{
+  font-size: 1.2em;
+}
+.welcome h2{
+  margin-bottom: 0.3em;
+
+  font-size: 3em;
+  text-shadow: 2px 2px 3px #141313;
+  color: #d00000;
+}
+.welcome button{
+  position: absolute;
+  bottom: -25%;
+  padding: 1.2em 1.5em;
+  
+  border-style: none;
+  border-radius: 7px;
+  box-shadow: 3px 3px 5px #141313;
+
+  background-color: #d00000;
+  color: #ffecd1;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.cards{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: 360px;
+  grid-column-gap: 3vw;
+  width: 95%;
+  margin: 0 auto;
+}
+.cards div{
+  padding: 10px 7px;
+
+  border-radius: 12px;
+  
+  background-color: rgb(180, 221, 167);
+}
+.topics h3{
+  font-size: 2em;
+  font-weight: 900;
+  color: #370617;
+}
+.topics p{
+  font-size: 1.2em;
+}
+.topics p:not(.cards p){
+  padding: 2em 0;
+  font-weight: 500;
+}
+.topics button{
+  padding: 0.7em 1.6em;
+
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px #8a8a8a;
+
+  background: linear-gradient(135deg, rgba(38,29,32,1) 0%,rgba(106,4,15,1) 43%,rgba(157,2,8,1) 85%,rgba(208,0,0,1) 100%);
+  color: #ffecd1;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.copyright{
+  background-color: #080808;
+  padding: 10px;
+}
+.copyright p{
+  text-indent: 10px;
+}
+.copyright span::after{
+  content: "\00A9";
+}
+#login-btn{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  padding: 1em 1.5em;
+
+  border-radius: 7px;
+
+  background-color: #d00000;
+  color: #ffecd1;
+  text-decoration: none;
+  font-weight: bold;
+}
+#yellow-review{
+  top: 5px;
+  left: 22%;
+  z-index: 1;
+  transform: scale(1.3)
+}
+#blue-review{
+  top: 100px;
+  left: 20%;
+  z-index: 3;
+}
+#green-review{
+  right: 15%;
+  top: 60px;
+  z-index: 2;
+  transform: scale(1.2);
+}
+#cinema{
+  position: relative;
+  width: 70%;
+  height: 80%;
+  margin: 0 auto;
+}
+#video-player{
+  left: 10px;
+  top: 30px;
+  transform: scale(1.3);
+  z-index: 1;
+}
+#video-mobile{
+  top: -30px;
+  right: 35%;
+  transform: scale(0.7);
+  z-index: 2;
+}
+#video-computer{
+  right: 10px;
+  top: 35px;
+  transform: scale(1.2) skew(3deg);
+  z-index: 3;
+}
