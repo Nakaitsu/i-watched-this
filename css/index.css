@@ -24,9 +24,6 @@ ul{
   margin: 0;
   list-style: none;
 }
-main{
-  clear: both;
-}
 footer{
   padding: 80px 3px 0;
   
@@ -34,17 +31,13 @@ footer{
   color: #ffecd1;
 }
 header{
-  position: relative;  
-  padding: 10px 20px;
-  max-height: 9vh;
-  overflow: hidden;
+  padding: .7em 0;
+  width: 100%;
   
   background-color: #03071e;
   color: #ffecd1;
 }
 header h1{
-  float: left;
-
   font-style: italic;
   color: #faa307;
   text-shadow: 0 0 5px #ffbd43;
@@ -52,12 +45,70 @@ header h1{
 section.container{
   margin: 10px auto;
 }
+.header-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-items li{
+  display: inline-block;
+}
+.header-nav a{
+  display: block;
+  padding: 0.6em 1.4em;
+  
+  color: #ffecd1;
+}
+.header-search{
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  max-width: 20%;
+}
+.header-search label{
+  font-size: 1rem;
+}
+.search-bar input{
+  display: block;
+  flex-grow: 1;
+
+  display: block;
+  padding: .3em .35em;
+
+  border: none;
+  color: #333;
+}
+.search-bar input:focus{
+  outline: none
+}
+.search-bar{
+  display: flex;
+  overflow: hidden;
+
+  border-radius: 25px;
+
+  background-color: white;
+}
+.search-bar a{
+  display: inline-block;
+  min-width: 16px;
+  padding: 1em;
+
+  border: none;
+  border-left: .7px solid #acacac;
+  
+  vertical-align: middle;
+  text-indent: -9999px;
+  cursor: pointer;
+  background-image: url("./../img/busca.png");
+  background-size: 16px 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .container{
   width: 90%;
   margin: 0 auto;
-  padding: 50px 1em;
-  clear: both;
-  overflow: hidden;
 }
 .footer-division{
   display: grid;
@@ -98,59 +149,6 @@ section.container{
   position: absolute;
   height: 125px;
   width: 125px;
-}
-.header-container{
-  float: right;
-  width: 55%;
-}
-.menu-nav{
-  width: 65%;
-}
-.menu-nav ul li{
-  float: left;
-}
-.menu-nav a{
-  display: block;
-  padding: 0.6em 1.4em;
-  
-  color: #ffecd1;
-}
-.search{
-  float: right;
-  width: 35%;
-}
-.search label{
-  text-align: right;
-  font-size: 0.9em;
-}
-.search input{
-  width: 80%;
-  padding: 3px 7px;
-  float: left;
-
-  border-style: none;
-  color: #333;
-}
-.search-bar{
-  overflow: hidden;
-  width: 100%;
-
-  border-radius: 25px;
-}
-.search-bar button{
-  float: right;
-  width: 20%;
-  height: inherit;
-  padding: 3px 0;
-
-  border-style: none;
-  
-  text-indent: -9999px;
-  cursor: pointer;
-  background-image: url("./../img/busca.png");
-  background-size: 16px 16px;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .first-window{
   position: relative;
