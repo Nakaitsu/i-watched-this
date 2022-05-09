@@ -1,98 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>I Watched This</title>
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
-  </head>
 
-  <body>
-    <header>
-      <div class="container header-items">
-        <h1>I Watched This</h1>
-  
-          <nav class="header-nav">
-            <ul>
-              <li><a href="#">Reviews</a></li>
-              <li><a href="#">Explorar</a></li>
-              <li><a href="#">Sessões</a></li>
-              <li><a href="#">Notícias</a></li>
-            </ul>
-          </nav>
-  
-          <div class="header-search">
-              <label for="header-search-bar">Buscar</label>
-  
-              <div class="search-bar">
-                <input type="search" name="header-search" id="header-search-bar">
-                <a>buscar</a>
-              </div>
-          </div>
-  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I Watched This</title>
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+
+<body>
+  <header>
+    <div class="container header-items">
+      <h1>I Watched This</h1>
+
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Explorar</a></li>
+          <li><a href="#">Sessões</a></li>
+          <li><a href="#">Notícias</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-search">
+        <label for="header-search-bar">Buscar</label>
+
+        <div class="search-bar">
+          <input type="search" name="header-search" id="header-search-bar">
+          <a class="btn-search">buscar</a>
         </div>
       </div>
-    </header>
 
-    <main>
-      <div class="first-window">
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="first-window">
+      <div class="container wrapper">
         <div class="welcome">
           <h2>O lugar onde todos comentam sobre o que assitem</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
 
-          <button>Começe a explorar <span></span></button>
+          <a class="btn btn-big shadow-2">Começe a explorar <span></span></a>
         </div>
 
-        <a href="#" id="login-btn">Entrar</a>
+        <a href="#" class="btn btn-big sigin shadow-2">Entrar</a>
       </div>
+    </div>
 
-      <section class="container topics">
-        <div class="text">
+    <div class="container">
+      <section class="topics mb-1">
+        <div class="text text-start">
           <h3>Reviews a todo momento</h3>
           <p>
             Se precisa de dicas ou um empurrãozinho antes de assistir aquele filme ou uma série, a I Wached This
-            traz para você um espaço que pessoas de todos lugares podem comentar sobre o que acharam. Após alguns minutos
-            de busca você encontrará com o que se ocupar no tempo livre. Conteúdos interessantes te aguardam na sessão de reviews.
+            traz para você um espaço que pessoas de todos lugares podem comentar sobre o que acharam. Após alguns
+            minutos
+            de busca você encontrará com o que se ocupar no tempo livre. Conteúdos interessantes te aguardam na sessão
+            de
+            reviews.
           </p>
 
-          <button>Ir para reviews <span></span></button>
+          <a class="btn btn-small btn-gradient-1 shadow">Ir para reviews <span></span></a>
         </div>
 
         <div class="illustration">
-          <img id="yellow-review"src="./img/feedback1.png" alt="ilustração de reviews 1">
+          <img id="yellow-review" src="./img/feedback1.png" alt="ilustração de reviews 1">
           <img id="green-review" src="./img/feedback2.png" alt="ilustração de reviews 2">
           <img id="blue-review" src="./img/feedback3.png" alt="ilustraçãode reviews 3">
         </div>
       </section>
+    </div>
 
-      <section class="container topics">
-        <div class="text">
-          <h3>Assista com a galera</h3>
-          <p>
-            Aqui nós te oferecemos a oportunidade de assitir com outras pessoas, desconhecidas ou não no estilo cinema. Na guia Sessões
-            você pode se juntar com amigos ou entrar em salas prontas e assisitr o que achar melhor. As salas possuem limites de até 50 usuários
-            simultaneamente e conta com um sistema de chat dinâmico para você acompanhar a reação da galera.
-          </p>
+    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 140" version="1.1"
+      xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="rgba(11.141, 21.545, 81.367, 1)" offset="0%"></stop>
+          <stop stop-color="rgba(1, 0, 17, 1)" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+        d="M0,28L40,28C80,28,160,28,240,30.3C320,33,400,37,480,51.3C560,65,640,89,720,81.7C800,75,880,37,960,18.7C1040,0,1120,0,1200,11.7C1280,23,1360,47,1440,67.7C1520,89,1600,107,1680,105C1760,103,1840,79,1920,79.3C2000,79,2080,103,2160,100.3C2240,98,2320,70,2400,63C2480,56,2560,70,2640,72.3C2720,75,2800,65,2880,56C2960,47,3040,37,3120,39.7C3200,42,3280,56,3360,51.3C3440,47,3520,23,3600,28C3680,33,3760,65,3840,79.3C3920,93,4000,89,4080,72.3C4160,56,4240,28,4320,23.3C4400,19,4480,37,4560,53.7C4640,70,4720,84,4800,79.3C4880,75,4960,51,5040,42C5120,33,5200,37,5280,49C5360,61,5440,79,5520,84C5600,89,5680,79,5720,74.7L5760,70L5760,140L5720,140C5680,140,5600,140,5520,140C5440,140,5360,140,5280,140C5200,140,5120,140,5040,140C4960,140,4880,140,4800,140C4720,140,4640,140,4560,140C4480,140,4400,140,4320,140C4240,140,4160,140,4080,140C4000,140,3920,140,3840,140C3760,140,3680,140,3600,140C3520,140,3440,140,3360,140C3280,140,3200,140,3120,140C3040,140,2960,140,2880,140C2800,140,2720,140,2640,140C2560,140,2480,140,2400,140C2320,140,2240,140,2160,140C2080,140,2000,140,1920,140C1840,140,1760,140,1680,140C1600,140,1520,140,1440,140C1360,140,1280,140,1200,140C1120,140,1040,140,960,140C880,140,800,140,720,140C640,140,560,140,480,140C400,140,320,140,240,140C160,140,80,140,40,140L0,140Z">
+      </path>
+    </svg>
 
-          <button>Explorar uma sessão</button>
-        </div>
+    <div class="topics-bg">
+      <div class="container">
+        <section class="topics">
+          <div class="illustration">
+            <img id="cinema" src="./img/cinema2.png" alt="ilustração cinema">
+          </div>
 
-        <div class="illustration">
-          <img id="cinema" src="./img/cinema2.png" alt="ilustração cinema">
-        </div>
-        
-      </section>
+          <div class="text text-end">
+            <h3>Assista com a galera</h3>
+            <p>
+              Aqui nós te oferecemos a oportunidade de assitir com outras pessoas, desconhecidas ou não no estilo
+              cinema.
+              Na
+              guia Sessões
+              você pode se juntar com amigos ou entrar em salas prontas e assisitr o que achar melhor. As salas possuem
+              limites de até 50 usuários
+              simultaneamente e conta com um sistema de chat dinâmico para você acompanhar a reação da galera.
+            </p>
 
-      <section class="container topics">
-        <div class="text">
+            <a class="btn btn-small btn-gradient-1 shadow-3">Explorar uma sessão</a>
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 140" version="1.1"
+      xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="rgba(11.141, 21.545, 81.367, 1)" offset="0%"></stop>
+          <stop stop-color="rgba(1, 0, 17, 1)" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+        d="M0,84L40,86.3C80,89,160,93,240,86.3C320,79,400,61,480,60.7C560,61,640,79,720,72.3C800,65,880,33,960,25.7C1040,19,1120,37,1200,53.7C1280,70,1360,84,1440,86.3C1520,89,1600,79,1680,65.3C1760,51,1840,33,1920,32.7C2000,33,2080,51,2160,56C2240,61,2320,51,2400,56C2480,61,2560,79,2640,81.7C2720,84,2800,70,2880,70C2960,70,3040,84,3120,86.3C3200,89,3280,79,3360,70C3440,61,3520,51,3600,53.7C3680,56,3760,70,3840,77C3920,84,4000,84,4080,91C4160,98,4240,112,4320,98C4400,84,4480,42,4560,32.7C4640,23,4720,47,4800,56C4880,65,4960,61,5040,58.3C5120,56,5200,56,5280,56C5360,56,5440,56,5520,56C5600,56,5680,56,5720,56L5760,56L5760,140L5720,140C5680,140,5600,140,5520,140C5440,140,5360,140,5280,140C5200,140,5120,140,5040,140C4960,140,4880,140,4800,140C4720,140,4640,140,4560,140C4480,140,4400,140,4320,140C4240,140,4160,140,4080,140C4000,140,3920,140,3840,140C3760,140,3680,140,3600,140C3520,140,3440,140,3360,140C3280,140,3200,140,3120,140C3040,140,2960,140,2880,140C2800,140,2720,140,2640,140C2560,140,2480,140,2400,140C2320,140,2240,140,2160,140C2080,140,2000,140,1920,140C1840,140,1760,140,1680,140C1600,140,1520,140,1440,140C1360,140,1280,140,1200,140C1120,140,1040,140,960,140C880,140,800,140,720,140C640,140,560,140,480,140C400,140,320,140,240,140C160,140,80,140,40,140L0,140Z">
+      </path>
+    </svg>
+
+    <div class="container">
+      <section class="topics mb-1">
+        <div class="text text-start">
           <h3>Não precisa baixar nada</h3>
-          <p> 
-            Sem a necessidade de baixar contéudo adicionais, nossa plataforma oferece conforto para nossos usuários com um sistema de streaming. Após
-            assinar um de nossos planos todos canais estarão disponíveis para você acessar. Também há sessões não pagas com filmes, séries e outras midias
+          <p>
+            Sem a necessidade de baixar contéudo adicionais, nossa plataforma oferece conforto para nossos usuários com
+            um
+            sistema de streaming. Após
+            assinar um de nossos planos todos canais estarão disponíveis para você acessar. Também há sessões não pagas
+            com filmes, séries e outras midias
             digitais, porém com uma variedade limitada.
           </p>
-  
-          <button>Conhecer nossos serviços</button>
+
+          <a class="btn btn-small btn-gradient-1 shadow">Conhecer nossos serviços</a>
         </div>
 
         <div class="illustration">
@@ -100,82 +147,95 @@
           <img id="video-player" src="./img/video.png" alt="ilustração streaming 2">
           <img id="video-mobile" src="./img/video-player-mobile.png" alt="ilustração streaming 3">
         </div>
-        
+
       </section>
+    </div>
 
-      <section class="container topics">
-        <h3>Nossa proposta</h3>
-        <p>Nosso objetivo é unir as pessoas independente de sua localidade e oferecer entretenimento com serviços de qualidade.</p>
-
+    <div class="container">
+      <section class="topics mb-1">
+        <div class="text text-start mb-2">
+          <h3>Nossa proposta</h3>
+          <p>Nosso objetivo é unir as pessoas independente de sua localidade e oferecer entretenimento com serviços de
+            qualidade.
+          </p>
+        </div>
         <div class="cards">
           <div>
             <p>Conteúdo ilimitado e acessibilidade nós garantimos</p>
           </div>
-  
+
           <div>
-            <p>Se conecte com as atualidades no mundo cinematográfico, recebendo noticías e acessando os útimos lançamentos e sucessos de bilheterias</p>
+            <p>Se conecte com as atualidades no mundo cinematográfico, recebendo noticías e acessando os útimos
+              lançamentos e sucessos de bilheterias</p>
           </div>
-  
+
           <div>
-            <p>Se inscreva em alguns minutos e escolha entre o mundo premium ou grátis, ambos com bastante horas de conteúdos</p>
+            <p>Se inscreva em alguns minutos e escolha entre o mundo premium ou grátis, ambos com bastante horas de
+              conteúdos</p>
           </div>
-  
+
           <div>
             <p>Materiais e informações para ajudar a voce escolher o que assistir</p>
           </div>
         </div>
       </section>
-    </main>
+    </div>
 
-    <footer>
-      <div class="container footer-division">
-        
-        <section>
-          <h3>Sobre</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Non curabitur gravida arcu ac tortor. Etiam dignissim diam quis enim lobortis.
-            Ullamcorper morbi tincidunt ornare massa eget egestas. At varius vel pharetra vel turpis. Sit amet commodo nulla facilisi nullam vehicula ipsum a arcu.
-          </p>
-        </section>
-        
-        <section>
-          <h3>Privacidade e Políticas</h3>
+  </main>
+
+  <footer>
+    <div class="container footer-division">
+
+      <section>
+        <h4>Sobre</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+          Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Non curabitur gravida arcu
+          ac tortor. Etiam dignissim diam quis enim lobortis.
+          Ullamcorper morbi tincidunt ornare massa eget egestas. At varius vel pharetra vel turpis. Sit amet commodo
+          nulla facilisi nullam vehicula ipsum a arcu.
+        </p>
+      </section>
+
+      <section>
+        <h4>Privacidade e Políticas</h3>
 
           <ul>
             <li><a href="#">Termos de Uso</a></li>
             <li><a href="#">Link exemplo</a></li>
             <li><a href="#">Link Exemplo</a></li>
           </ul>
-        </section>
-        
-        <section>
-          <h3>Suporte</h3>
+      </section>
 
-          <ul>
-            <li><a href="">Contatos</a></li>
-            <li><a href="">Central de Ajuda</a></li>
-            <li><a href="">Forúm</a></li>
-            <li><a href="">FAQ</a></li>
-          </ul>
-        </section>
-        
-        <section>
-          <h3>Redes sociais</h3>
-  
-          <ul>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-          </ul>
-        </section>
+      <section>
+        <h4>Suporte</h4>
 
-      </div>
+        <ul>
+          <li><a href="">Contatos</a></li>
+          <li><a href="">Central de Ajuda</a></li>
+          <li><a href="">Forúm</a></li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </section>
 
-      <div class="copyright">
-        <p>Copyright <span></span> 2022 - I Watched This - Todos os direitos reservados</p>
-      </div>
+      <section>
+        <h4>Redes sociais</h4>
 
-    </footer>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </section>
 
-  </body>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright <span></span> 2022 - I Watched This - Todos os direitos reservados</p>
+    </div>
+
+  </footer>
+
+</body>
+
 </html>
